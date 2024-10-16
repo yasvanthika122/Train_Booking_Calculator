@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7f1f8027-d322-4239-951e-4e0ce9211355)# Train Ticket Calculator
+## Train Ticket Calculator
 
 A **Train Ticket Calculator** application that allows users to calculate the total ticket price for various classes of train journeys. Users can input their personal details, select a train class, specify the number of tickets, and get the total cost. The application also provides options to add or remove events (ticket forms) dynamically.
 
