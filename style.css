@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url('https://imgk.timesnownews.com/story/1554459699-GettyImages-809086440.jpg?tr=w-600,h-450,fo-auto');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+    /* Flexbox to center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Calculator Box Styling */
+.calculator-box {
+    background-image: url('https://images.unsplash.com/photo-1521571086300-579bd981bbb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;  /* Responsive width */
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.input-group label {
+    width: 30%;
+    font-size: 18px;
+    color: #333;
+}
+
+.input-group input,
+.input-group select {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result h2 {
+    color: #333;
+}

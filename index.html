@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-box">
+        <h1>Train Booking Calculation</h1>
+        <div class="input-group">
+            <label for="fname">Passenger Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your name" required>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div id="course-wrapper">
+            <form class="ticket-form">
+                <div class="input-group">
+                    <label for="train-name">Train Name:</label>
+                    <input type="text" id="train-name" placeholder="Enter train name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="class">Class:</label>
+                    <select id="class" required>
+                        <option value="select">Select</option>
+                        <option value="5">First AC (1AC)</option>
+                        <option value="4">Second AC (2A)</option>
+                        <option value="3">First Class (FC)</option>
+                        <option value="2">Third AC (3A)</option>
+                        <option value="1">Sleeper</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="count">Count:</label>
+                    <input type="number" id="count" placeholder="Enter number of tickets" required>
+                </div>
+            </form>
+        </div>
+
+        <div class="btn-group">
+            <button onclick="addCourse()">+ Add Event</button>
+            <button onclick="removeCourse()">- Remove Event</button>
+            <button onclick="calcTotal()">Calculate TOTAL</button>
+        </div>
+
+        <div class="result">
+            <h2>Price of Ticket is: <span id="total-price"></span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
